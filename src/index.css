@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+  @apply flex min-h-screen flex-col antialiased;
+  @apply bg-gradient-to-b from-cyan-50 to-teal-100;
+}
+
+.mygrad-1 {
+  @apply bg-[#7700ee] text-white;
+}
