@@ -4,3 +4,8 @@ import { twMerge } from 'tailwind-merge'
 export const clsxm = (...classes: ClassValue[]) => {
   return twMerge(clsx(...classes))
 }
+
+// A fancy function to shorten someones wallet address, no need to show the whole thing.
+export const shortenAddress = (str: string) => {
+  return str.substring(0, 6) + '...' + str.substring(str.length - 4)
+}
